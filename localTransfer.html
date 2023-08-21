@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make A Local Transfer</title>
+    <link rel="stylesheet" type="text/css" href="localTransfer.css">
+
+</head>
+<body>
+    <header>
+        <b>Make a local transfer</b>
+    </header>
+
+    <form action="confirmationPageLocal.html" name="localTransfer">
+<div> 
+
+    <label for="myAccNum"><b>Choose your account</b></label>
+    <select id="myAccNum" name="myAccNum">
+        <option value="123-45678-9">123-45678-9</option>
+    </select>
+
+    <br>
+    </br>
+
+    <label for="recipientName"><b>Recipient Name</b></label>
+    <input type="text" id="recipientName" name="recipientName" placeholder="Jace Norman" required>
+
+<br>
+</br>
+
+    <label for="bankType"><b>Select Bank</b></label>
+        <select id="bankType" name="bankType" required>
+            <option value="CSbank">CSbank</option>
+            <option value="ANEXT BANK PTE. LTD.">ANEXT BANK PTE. LTD.</option>
+            <option value="AUSTRALIA & NZ BANKING GRP LTD">AUSTRALIA & NZ BANKING GRP LTD</option>
+            <option value="BANGKOK BANK PUBLIC CO LTD">BANGKOK BANK PUBLIC CO LTD</option>
+            <option value="BANK OF AMERICA, NA">BANK OF AMERICA, NA</option>
+            <option value="BANK OF CHINA">BANK OF CHINA</option>
+            <option value="BANK OF INDIA">BANK OF INDIA</option>
+            <option value="BNP PARIBAS">BNP PARIBAS</option>
+            <option value="CIMB BANK BERHAD">CIMB BANK BERHAD</option>
+            <option value="CITIBANK NA">CITIBANK NA</option>
+            <option value="CITIBANK SINGAPORE LIMITED">CITIBANK SINGAPORE LIMITED</option>
+            <option value="COMMERZBANK AKTIENGESELLCHAFT">COMMERZBANK AKTIENGESELLCHAFT</option>
+            <option value="CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK">CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK</option>
+            <option value="CTBC BANK CO. LTD">CTBC BANK CO. LTD</option>
+            <option value="DBS/POSB">DBS/POSB</option>
+            <option value="DEUTSCHE BANK AG">DEUTSCHE BANK AG</option>
+            <option value="FIRST COMMERCIAL BANK, LTD">FIRST COMMERCIAL BANK, LTD</option>
+            <option value="GPAY NETWORK (S) PTE LTD">GPAY NETWORK (S) PTE LTD</option>
+            <option value="GREEN LINK DIGITAL BANK PTE LTD">GREEN LINK DIGITAL BANK PTE LTD</option>
+            <option value="GXS BANK PTE LTD">GXS BANK PTE LTD</option>
+            <option value="HL BANK">HL BANK</option>
+            <option value="HSBC (CORPORATE)">HSBC (CORPORATE)</option>
+            <option value="HSBC (PERSONAL)">HSBC (PERSONAL)</option>
+            <option value="ICICI BANK LIMITED">ICICI BANK LIMITED</option>
+            <option value="INDIAN BANK">INDIAN BANK</option>
+            <option value="INDIAN OVERSEAS BANK">INDIAN OVERSEAS BANK</option>
+            <option value="INDUSTRIAL AND COMMERCIAL BANK OF CHINA">INDUSTRIAL AND COMMERCIAL BANK OF CHINA</option>
+            <option value="INTESA SANPAOLO S.P.A">INTESA SANPAOLO S.P.A</option>
+            <option value="JPMORGAN CHASE BANK">JPMORGAN CHASE BANK</option>
+            <option value="KOREA EXCHANGE BANK">KOREA EXCHANGE BANK</option>
+            <option value="LIQUID GROUP PTE LTD">LIQUID GROUP PTE LTD</option>
+            <option value="MALAYAN BANKING BERHAD">MALAYAN BANKING BERHAD</option>
+            <option value="MARIBANK SINGAPORE PRIVATE LIMITED">MARIBANK SINGAPORE PRIVATE LIMITED</option>
+            <option value="MATCHMOVE PAY PTE LTD">MATCHMOVE PAY PTE LTD</option>
+            <option value="MAYBANK SINGAPORE LIMITED">MAYBANK SINGAPORE LIMITED</option>
+            <option value="MEGA INTERNATIONAL COMMERCIAL BANK CO. LTD">MEGA INTERNATIONAL COMMERCIAL BANK CO. LTD</option>
+            <option value="MIZUHO BANK LTD">MIZUHO BANK LTD</option>
+            <option value="NATIONAL AUSTRALIA BANK LTD">NATIONAL AUSTRALIA BANK LTD</option>
+            <option value="NIUM PTE LTD">NIUM PTE LTD</option>
+            <option value="OVERSEA-CHINESE BANKING CORPORATION LTD">OVERSEA-CHINESE BANKING CORPORATION LTD</option>
+            <option value="PT BANK NEGARA INDONESIA (PERSERO) TBK">PT BANK NEGARA INDONESIA (PERSERO) TBK</option>
+            <option value="QATAR NATIONAL BANK SAQ">QATAR NATIONAL BANK SAQ</option>
+            <option value="RHB BANK BERHAD">RHB BANK BERHAD</option>
+            <option value="SING INVESTMENTS & FINANCE LIMITED">SING INVESTMENTS & FINANCE LIMITED</option>
+            <option value="SINGAPURA FINANCE LIMITED">SINGAPURA FINANCE LIMITED</option>
+            <option value="SINGCASH PTE LTD">SINGCASH PTE LTD</option>
+            <option value="SKANDINAVISKA ENSKILDA BANKEN AB(PUBL)">SKANDINAVISKA ENSKILDA BANKEN AB(PUBL)</option>
+            <option value="SOCIETE GENERALE">SOCIETE GENERALE</option>
+            <option value="STANDARD CHARTERED BANK (SINGAPORE) LIMITED">STANDARD CHARTERED BANK (SINGAPORE) LIMITED</option>
+            <option value="STATE BANK OF INDIA">STATE BANK OF INDIA</option>
+            <option value="SUMITOMO MITSUI BANKING CORPORATION">SUMITOMO MITSUI BANKING CORPORATION</option>
+            <option value="THE BANK OF EAST ASIA LTD">THE BANK OF EAST ASIA LTD</option>
+            <option value="THE BANK OF TOKYO - MITSUBISHI UFJ LTD">THE BANK OF TOKYO - MITSUBISHI UFJ LTD</option>
+            <option value="TRUST BANK SINGAPORE LIMITED">TRUST BANK SINGAPORE LIMITED</option>
+    </select>
+
+    <br>
+</br>
+
+    <label for="accountNum"><b>Account Number</b></label>
+    <input type="text" id="accountNum" name="accountNum" pattern="[0-9]{9}" placeholder="365-63359-1" required>
+
+    <br>
+</br>
+
+    <label for="transferAmount"><b>Amount to transfer</b></label>
+    <input type="text" id="transferAmount" name="transferAmount" placeholder="500" required>
+
+<br>
+</br>
+
+
+
+    <button type="next"><b>Next</b></button>
+
+</div>
+</form>
+
+    <footer>
+        <p>&copy; 2023 CSbank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

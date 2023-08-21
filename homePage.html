@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" type="text/css" href="homePage.css" /> 
+</head>
+
+<header><b>HomePage</b></header>
+
+<body>
+
+    <div class="container">
+        <div class="center">
+
+        <p id="sgd"><b>SGD <span style="color:black" id="availableBalance">   </span></b></p>
+        <hr>
+        <p id="availableBalance1">Available Balance</p>
+        
+        <div class="row">
+            <div class="column">
+                <a href="makeTransfer.html">
+                    <img src="images/makeTransfer.jpg" alt="makeTransfer">
+                </a>
+                <a href="makeTransfer.html"><b>Make a Transfer</b></a>
+            </div>
+            <div class="column">
+                <a href="transactionHistory.html">
+                    <img src="images/transactionHistory.jpg" alt="transactionHistory">
+                </a>
+                <a href="transactionHistory.html"><b>Transaction History</b></a>
+            </div>
+            </div>
+            <div class="row">
+            <div class="column">
+                <a href="eStatement.html">
+                    <img src="images/eStatement.jpg" alt="eStatement">
+                </a>
+                <a href="eStatement.html"><b>eStatement</b></a>
+            </div>
+            <div class="column">
+                <a href="currencyConverter.html">
+                    <img src="images/currencyConverter.jpg" alt="currencyConverter">
+                </a>
+                <a href="currencyConverter.html"><b>Currency Converter</b></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="cardApplication.html">
+                    <img src="images/cardApplication.jpg" alt="cardApplication">
+                </a>
+                <a href="cardApplication.html"><b>Card Application</b></a>
+            </div>
+            <div class="column">
+                <a href="loanApplication.html">
+                    <img src="images/loanApplication.jpg" alt="loanApplication">
+                </a>
+                <a href="loanApplication.html"><b>Loan Application</b></a>
+            </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    var availableBalance = 1056.23
+    document.getElementById("availableBalance").innerHTML = availableBalance;
+</script>
+
+<footer>
+    <p>&copy; 2023 CSbank. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

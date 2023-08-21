@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" type="text/css" href="confirmationPageOverseas.css">
+
+</head>
+<body>
+    <header>
+        <b>Confirmation Page</b>
+    </header>
+
+    <div class="flex-container" id="write">
+
+        <form name="overseasTransferConfirmationForm" action="homepage.html" onsubmit="return validateForm()" method="post" required>
+
+        <a href="overseasTransfer.html" ><b>Click Here To Make Changes</b></a>
+
+        <br>
+        </br>
+        <br>
+        </br>
+        <br>
+        </br>
+    
+
+        <p class="myAcc-Num"><!-- Display accountNum here --></p>
+
+        <br>
+        </br>
+
+        <p class="recipient-name"><!-- Display accountNum here --></p>
+
+        <br>
+        </br>
+
+        <p class="account-num"><!-- Display accountNum here --></p>
+
+        <br>
+        </br>
+
+        <p class="bank-Type"><!-- Display accountNum here --></p>
+
+        <br>
+        </br>
+
+        <p class="transfer-Amount"><!-- Display accountNum here --></p>
+
+        <br>
+        </br>
+
+        <hr>
+
+        <br>
+        </br>
+
+        <button type="submit" >Confirm</button>
+
+
+    </form>
+        
+</div>
+
+    <footer>
+        <p>&copy; 2023 CSbank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const accountNum = params.get('accountNum');
+            const recipientName = params.get('recipientName');
+            const myAccNum = params.get('myAccNum');
+            const transferAmount = params.get('transferAmount');
+            const bankType = params.get('bankType');
+            const selectCurrency = params.get('selectCurrency');
+
+
+            if (accountNum) {
+                const accountNumElement = document.querySelector('.account-num');
+                accountNumElement.textContent = "Recipient Account Number:   " + accountNum;
+            }
+
+            if (recipientName) {
+                const recipientNameElement = document.querySelector('.recipient-name');
+                recipientNameElement.textContent = "Recipient Name:   " + recipientName;
+            }
+            if (transferAmount) {
+                const transferAmountElement = document.querySelector('.transfer-Amount');
+                transferAmountElement.textContent = "Transfer Amount:   " + transferAmount + "       " + selectCurrency;
+            }
+            if (recipientName) {
+                const myAccNumElement = document.querySelector('.myAcc-Num');
+                myAccNumElement.textContent = "Your Account Number:   " + myAccNum;
+            }
+            if (bankType) {
+                const bankTypeElement = document.querySelector('.bank-Type');
+                bankTypeElement.textContent = "Recipient Bank:   " + bankType;
+            }
+            
+        }
+        function validateForm() {
+        if (confirm("Are you sure you want to confirm the transaction?")) {
+            alert("Successful Transaction!");
+            window.location.href = "homePage.html";
+        }
+    }
+        
+</script>

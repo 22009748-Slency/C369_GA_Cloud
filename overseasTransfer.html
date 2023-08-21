@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make An Overseas Transfer</title>
+    <link rel="stylesheet" type="text/css" href="overseasTransfer.css">
+
+</head>
+<body>
+    <header>
+        <b>Make an overseas transfer</b>
+    </header>
+
+    <form action="confirmationPageOverseas.html" name="localTransfer">
+<div> 
+
+    <label for="myAccNum"><b>Choose your account</b></label>
+    <select id="myAccNum" name="myAccNum">
+        <option value="123-45678-9">123-45678-9</option>
+    </select>
+
+    <br>
+    </br>
+
+    <label for="recipientName"><b>Recipient Name</b></label>
+    <input type="text" id="recipientName" name="recipientName" placeholder="Jace Norman" required>
+
+<br>
+</br>
+
+    <label for="bankType"><b>Select Bank</b></label>
+        <select id="bankType" name="bankType" required>
+            <option value="CSbank">CSbank</option>
+            <option value="ANEXT BANK PTE. LTD.">ANEXT BANK PTE. LTD.</option>
+            <option value="AUSTRALIA & NZ BANKING GRP LTD">AUSTRALIA & NZ BANKING GRP LTD</option>
+            <option value="BANGKOK BANK PUBLIC CO LTD">BANGKOK BANK PUBLIC CO LTD</option>
+            <option value="BANK OF AMERICA, NA">BANK OF AMERICA, NA</option>
+            <option value="BANK OF CHINA">BANK OF CHINA</option>
+            <option value="BANK OF INDIA">BANK OF INDIA</option>
+            <option value="BNP PARIBAS">BNP PARIBAS</option>
+            <option value="CIMB BANK BERHAD">CIMB BANK BERHAD</option>
+            <option value="CITIBANK NA">CITIBANK NA</option>
+            <option value="CITIBANK SINGAPORE LIMITED">CITIBANK SINGAPORE LIMITED</option>
+            <option value="COMMERZBANK AKTIENGESELLCHAFT">COMMERZBANK AKTIENGESELLCHAFT</option>
+            <option value="CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK">CREDIT AGRICOLE CORPORATE AND INVESTMENT BANK</option>
+            <option value="CTBC BANK CO. LTD">CTBC BANK CO. LTD</option>
+            <option value="DBS/POSB">DBS/POSB</option>
+            <option value="DEUTSCHE BANK AG">DEUTSCHE BANK AG</option>
+            <option value="FIRST COMMERCIAL BANK, LTD">FIRST COMMERCIAL BANK, LTD</option>
+            <option value="GPAY NETWORK (S) PTE LTD">GPAY NETWORK (S) PTE LTD</option>
+            <option value="GREEN LINK DIGITAL BANK PTE LTD">GREEN LINK DIGITAL BANK PTE LTD</option>
+            <option value="GXS BANK PTE LTD">GXS BANK PTE LTD</option>
+            <option value="HL BANK">HL BANK</option>
+            <option value="HSBC (CORPORATE)">HSBC (CORPORATE)</option>
+            <option value="HSBC (PERSONAL)">HSBC (PERSONAL)</option>
+            <option value="ICICI BANK LIMITED">ICICI BANK LIMITED</option>
+            <option value="INDIAN BANK">INDIAN BANK</option>
+            <option value="INDIAN OVERSEAS BANK">INDIAN OVERSEAS BANK</option>
+            <option value="INDUSTRIAL AND COMMERCIAL BANK OF CHINA">INDUSTRIAL AND COMMERCIAL BANK OF CHINA</option>
+            <option value="INTESA SANPAOLO S.P.A">INTESA SANPAOLO S.P.A</option>
+            <option value="JPMORGAN CHASE BANK">JPMORGAN CHASE BANK</option>
+            <option value="KOREA EXCHANGE BANK">KOREA EXCHANGE BANK</option>
+            <option value="LIQUID GROUP PTE LTD">LIQUID GROUP PTE LTD</option>
+            <option value="MALAYAN BANKING BERHAD">MALAYAN BANKING BERHAD</option>
+            <option value="MARIBANK SINGAPORE PRIVATE LIMITED">MARIBANK SINGAPORE PRIVATE LIMITED</option>
+            <option value="MATCHMOVE PAY PTE LTD">MATCHMOVE PAY PTE LTD</option>
+            <option value="MAYBANK SINGAPORE LIMITED">MAYBANK SINGAPORE LIMITED</option>
+            <option value="MEGA INTERNATIONAL COMMERCIAL BANK CO. LTD">MEGA INTERNATIONAL COMMERCIAL BANK CO. LTD</option>
+            <option value="MIZUHO BANK LTD">MIZUHO BANK LTD</option>
+            <option value="NATIONAL AUSTRALIA BANK LTD">NATIONAL AUSTRALIA BANK LTD</option>
+            <option value="NIUM PTE LTD">NIUM PTE LTD</option>
+            <option value="OVERSEA-CHINESE BANKING CORPORATION LTD">OVERSEA-CHINESE BANKING CORPORATION LTD</option>
+            <option value="PT BANK NEGARA INDONESIA (PERSERO) TBK">PT BANK NEGARA INDONESIA (PERSERO) TBK</option>
+            <option value="QATAR NATIONAL BANK SAQ">QATAR NATIONAL BANK SAQ</option>
+            <option value="RHB BANK BERHAD">RHB BANK BERHAD</option>
+            <option value="SING INVESTMENTS & FINANCE LIMITED">SING INVESTMENTS & FINANCE LIMITED</option>
+            <option value="SINGAPURA FINANCE LIMITED">SINGAPURA FINANCE LIMITED</option>
+            <option value="SINGCASH PTE LTD">SINGCASH PTE LTD</option>
+            <option value="SKANDINAVISKA ENSKILDA BANKEN AB(PUBL)">SKANDINAVISKA ENSKILDA BANKEN AB(PUBL)</option>
+            <option value="SOCIETE GENERALE">SOCIETE GENERALE</option>
+            <option value="STANDARD CHARTERED BANK (SINGAPORE) LIMITED">STANDARD CHARTERED BANK (SINGAPORE) LIMITED</option>
+            <option value="STATE BANK OF INDIA">STATE BANK OF INDIA</option>
+            <option value="SUMITOMO MITSUI BANKING CORPORATION">SUMITOMO MITSUI BANKING CORPORATION</option>
+            <option value="THE BANK OF EAST ASIA LTD">THE BANK OF EAST ASIA LTD</option>
+            <option value="THE BANK OF TOKYO - MITSUBISHI UFJ LTD">THE BANK OF TOKYO - MITSUBISHI UFJ LTD</option>
+            <option value="TRUST BANK SINGAPORE LIMITED">TRUST BANK SINGAPORE LIMITED</option>
+    </select>
+
+    <br>
+</br>
+
+    <label for="accountNum"><b>Account Number</b></label>
+    <input type="text" id="accountNum" name="accountNum" pattern="[0-9]{9}" placeholder="365-63359-1" required>
+
+    <br>
+</br>
+
+    <label for="selectCurrency"><b>Select Currency</b></label>
+    <select  id="selectCurrency" name="selectCurrency">
+        <option value="AFN">Afghan Afghani</option>
+        <option value="ALL">Albanian Lek</option>
+        <option value="DZD">Algerian Dinar</option>
+        <option value="AOA">Angolan Kwanza</option>
+        <option value="ARS">Argentine Peso</option>
+        <option value="AMD">Armenian Dram</option>
+        <option value="AWG">Aruban Florin</option>
+        <option value="AUD">Australian Dollar</option>
+        <option value="AZN">Azerbaijani Manat</option>
+        <option value="BSD">Bahamian Dollar</option>
+        <option value="BHD">Bahraini Dinar</option>
+        <option value="BDT">Bangladeshi Taka</option>
+        <option value="BBD">Barbadian Dollar</option>
+        <option value="BYR">Belarusian Ruble</option>
+        <option value="BEF">Belgian Franc</option>
+        <option value="BZD">Belize Dollar</option>
+        <option value="BMD">Bermudan Dollar</option>
+        <option value="BTN">Bhutanese Ngultrum</option>
+        <option value="BTC">Bitcoin</option>
+        <option value="BOB">Bolivian Boliviano</option>
+        <option value="BAM">Bosnia-Herzegovina Convertible Mark</option>
+        <option value="BWP">Botswanan Pula</option>
+        <option value="BRL">Brazilian Real</option>
+        <option value="GBP">British Pound Sterling</option>
+        <option value="BND">Brunei Dollar</option>
+        <option value="BGN">Bulgarian Lev</option>
+        <option value="BIF">Burundian Franc</option>
+        <option value="KHR">Cambodian Riel</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="CVE">Cape Verdean Escudo</option>
+        <option value="KYD">Cayman Islands Dollar</option>
+        <option value="XOF">CFA Franc BCEAO</option>
+        <option value="XAF">CFA Franc BEAC</option>
+        <option value="XPF">CFP Franc</option>
+        <option value="CLP">Chilean Peso</option>
+        <option value="CNY">Chinese Yuan</option>
+        <option value="COP">Colombian Peso</option>
+        <option value="KMF">Comorian Franc</option>
+        <option value="CDF">Congolese Franc</option>
+        <option value="CRC">Costa Rican ColÃ³n</option>
+        <option value="HRK">Croatian Kuna</option>
+        <option value="CUC">Cuban Convertible Peso</option>
+        <option value="CZK">Czech Republic Koruna</option>
+        <option value="DKK">Danish Krone</option>
+        <option value="DJF">Djiboutian Franc</option>
+        <option value="DOP">Dominican Peso</option>
+        <option value="XCD">East Caribbean Dollar</option>
+        <option value="EGP">Egyptian Pound</option>
+        <option value="ERN">Eritrean Nakfa</option>
+        <option value="EEK">Estonian Kroon</option>
+        <option value="ETB">Ethiopian Birr</option>
+        <option value="EUR">Euro</option>
+        <option value="FKP">Falkland Islands Pound</option>
+        <option value="FJD">Fijian Dollar</option>
+        <option value="GMD">Gambian Dalasi</option>
+        <option value="GEL">Georgian Lari</option>
+        <option value="DEM">German Mark</option>
+        <option value="GHS">Ghanaian Cedi</option>
+        <option value="GIP">Gibraltar Pound</option>
+        <option value="GRD">Greek Drachma</option>
+        <option value="GTQ">Guatemalan Quetzal</option>
+        <option value="GNF">Guinean Franc</option>
+        <option value="GYD">Guyanaese Dollar</option>
+        <option value="HTG">Haitian Gourde</option>
+        <option value="HNL">Honduran Lempira</option>
+        <option value="HKD">Hong Kong Dollar</option>
+        <option value="HUF">Hungarian Forint</option>
+        <option value="ISK">Icelandic KrÃ³na</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="IDR">Indonesian Rupiah</option>
+        <option value="IRR">Iranian Rial</option>
+        <option value="IQD">Iraqi Dinar</option>
+        <option value="ILS">Israeli New Sheqel</option>
+        <option value="ITL">Italian Lira</option>
+        <option value="JMD">Jamaican Dollar</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="JOD">Jordanian Dinar</option>
+        <option value="KZT">Kazakhstani Tenge</option>
+        <option value="KES">Kenyan Shilling</option>
+        <option value="KWD">Kuwaiti Dinar</option>
+        <option value="KGS">Kyrgystani Som</option>
+        <option value="LAK">Laotian Kip</option>
+        <option value="LVL">Latvian Lats</option>
+        <option value="LBP">Lebanese Pound</option>
+        <option value="LSL">Lesotho Loti</option>
+        <option value="LRD">Liberian Dollar</option>
+        <option value="LYD">Libyan Dinar</option>
+        <option value="LTL">Lithuanian Litas</option>
+        <option value="MOP">Macanese Pataca</option>
+        <option value="MKD">Macedonian Denar</option>
+        <option value="MGA">Malagasy Ariary</option>
+        <option value="MWK">Malawian Kwacha</option>
+        <option value="MYR">Malaysian Ringgit</option>
+        <option value="MVR">Maldivian Rufiyaa</option>
+        <option value="MRO">Mauritanian Ouguiya</option>
+        <option value="MUR">Mauritian Rupee</option>
+        <option value="MXN">Mexican Peso</option>
+        <option value="MDL">Moldovan Leu</option>
+        <option value="MNT">Mongolian Tugrik</option>
+        <option value="MAD">Moroccan Dirham</option>
+        <option value="MZM">Mozambican Metical</option>
+        <option value="MMK">Myanmar Kyat</option>
+        <option value="NAD">Namibian Dollar</option>
+        <option value="NPR">Nepalese Rupee</option>
+        <option value="ANG">Netherlands Antillean Guilder</option>
+        <option value="TWD">New Taiwan Dollar</option>
+        <option value="NZD">New Zealand Dollar</option>
+        <option value="NIO">Nicaraguan CÃ³rdoba</option>
+        <option value="NGN">Nigerian Naira</option>
+        <option value="KPW">North Korean Won</option>
+        <option value="NOK">Norwegian Krone</option>
+        <option value="OMR">Omani Rial</option>
+        <option value="PKR">Pakistani Rupee</option>
+        <option value="PAB">Panamanian Balboa</option>
+        <option value="PGK">Papua New Guinean Kina</option>
+        <option value="PYG">Paraguayan Guarani</option>
+        <option value="PEN">Peruvian Nuevo Sol</option>
+        <option value="PHP">Philippine Peso</option>
+        <option value="PLN">Polish Zloty</option>
+        <option value="QAR">Qatari Rial</option>
+        <option value="RON">Romanian Leu</option>
+        <option value="RUB">Russian Ruble</option>
+        <option value="RWF">Rwandan Franc</option>
+        <option value="SVC">Salvadoran ColÃ³n</option>
+        <option value="WST">Samoan Tala</option>
+        <option value="SAR">Saudi Riyal</option>
+        <option value="RSD">Serbian Dinar</option>
+        <option value="SCR">Seychellois Rupee</option>
+        <option value="SLL">Sierra Leonean Leone</option>
+        <option value="SGD">Singapore Dollar</option>
+        <option value="SKK">Slovak Koruna</option>
+        <option value="SBD">Solomon Islands Dollar</option>
+        <option value="SOS">Somali Shilling</option>
+        <option value="ZAR">South African Rand</option>
+        <option value="KRW">South Korean Won</option>
+        <option value="XDR">Special Drawing Rights</option>
+        <option value="LKR">Sri Lankan Rupee</option>
+        <option value="SHP">St. Helena Pound</option>
+        <option value="SDG">Sudanese Pound</option>
+        <option value="SRD">Surinamese Dollar</option>
+        <option value="SZL">Swazi Lilangeni</option>
+        <option value="SEK">Swedish Krona</option>
+        <option value="CHF">Swiss Franc</option>
+        <option value="SYP">Syrian Pound</option>
+        <option value="STD">São Tomé and Príncipe Dobra</option>
+        <option value="TJS">Tajikistani Somoni</option>
+        <option value="TZS">Tanzanian Shilling</option>
+        <option value="THB">Thai Baht</option>
+        <option value="TOP">Tongan pa'anga</option>
+        <option value="TTD">Trinidad & Tobago Dollar</option>
+        <option value="TND">Tunisian Dinar</option>
+        <option value="TRY">Turkish Lira</option>
+        <option value="TMT">Turkmenistani Manat</option>
+        <option value="UGX">Ugandan Shilling</option>
+        <option value="UAH">Ukrainian Hryvnia</option>
+        <option value="AED">United Arab Emirates Dirham</option>
+        <option value="UYU">Uruguayan Peso</option>
+        <option value="USD">US Dollar</option>
+        <option value="UZS">Uzbekistan Som</option>
+        <option value="VUV">Vanuatu Vatu</option>
+        <option value="VEF">Venezuelan BolÃ­var</option>
+        <option value="VND">Vietnamese Dong</option>
+        <option value="YER">Yemeni Rial</option>
+        <option value="ZMK">Zambian Kwacha</option>
+    </select>
+
+    <br>
+    </br>
+
+
+    <label for="transferAmount"><b>Amount to transfer</b></label>
+    <input type="text" id="transferAmount" name="transferAmount" placeholder="500" required>
+
+<br>
+</br>
+
+
+
+    <button type="next"><b>Next</b></button>
+
+</div>
+</form>
+
+    <footer>
+        <p>&copy; 2023 CSbank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

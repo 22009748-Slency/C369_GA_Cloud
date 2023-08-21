@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSbank eStatements</title>
+    <link rel="stylesheet" type="text/css" href="estatement.css">
+</head>
+<body>
+    <header>
+        <h1>CSbank eStatements</h1>
+    </header>
+
+    <nav>
+        <ul class="navi">
+            <a href="homePage.html"><b>HomePage</b></a>
+            <a href="makeTransfer.html" ><b>Make a transfer</b></a>
+            <a href="transactionHistory.html" ><b>Transaction History</b></a>
+            <a href="currencyConverter.html" ><b>Currency Converter</b></a>
+            <a href="cardApplication.html" ><b>Credit/Debit Card Application</b></a>
+            <a href="loanApplication.html" ><b>Loan Application</b></a>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section class="estatements">
+            <div class="statement-list">
+                <h2>My eStatements</h2>
+                <ul>
+                    <li>
+                    <label for="accountNum">Account Number</label>
+                    <select id="accountNum" name="accountNum">
+                        <option value="123-45678-9">123-45678-9</option>
+                    </select>
+                </li>
+
+                    <li>
+                    <label for="year">Year</label>
+                    <select id="year" name="year">
+                        <option value="2023">2023</option>
+                    </select>
+                </li>
+                   
+                </ul>
+            </div>
+            <div class="logo-container">
+                <img width="200" src="Images/Logo.jpg" alt="CSbank Logo">
+            </div>
+        </section>
+    </main>
+<div> 
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Month</th>
+    <th>Download</th>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>July</td>
+    <td><a href="Images\eSatement_July.pdf" download>
+        <img src="Images/download.png" alt="july2023" width="25" >
+      </a></td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>June</td>
+    <td><a href="Images\eSatement_June.pdf" download>
+        <img src="Images/download.png" alt="june2023" width="25" >
+      </a></td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>May</td>
+    <td><a href="Images\eSatement_May.pdf" download>
+        <img src="Images/download.png" alt="may2023" width="25" >
+      </a></td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>April</td>
+    <td><a href="Images\eSatement_April.pdf" download>
+        <img src="Images/download.png" alt="april2023" width="25" >
+      </a></td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>March</td>
+    <td><a href="Images\eSatement_March.pdf" download>
+        <img src="Images/download.png" alt="march2023" width="25" >
+      </a></td>
+  </tr>
+</table>
+</div>
+    <footer>
+        <p>&copy; 2023 CSbank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

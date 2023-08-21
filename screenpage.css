@@ -1,0 +1,36 @@
+body {
+    margin: auto;
+    width: 640px; 
+    padding: 122px;
+    background-image: linear-gradient(to bottom left, rgb(241, 189, 255),rgb(223, 204, 228), rgb(26, 115, 133));
+
+  }
+  
+  img {
+    background-color: white;
+;
+  }
+  
+  /* Centered Image Code */
+  
+  .container {
+    height: 500px;
+    position: relative;
+    
+   
+    
+  }
+  
+   .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  div {
+    background-color: white
+  }

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    font-family: 'Eras Bold ITC', sans-serif;
+    font-size: 40px;
+    padding: 10px;
+}
+
+header, footer {
+    background-color: rgb(33, 80, 86);
+    text-align: center;
+    padding: 10px 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+button {
+    background-color: rgb(224, 222, 220);
+    color: black;
+    border: none;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Century Gothic', sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+    margin: 10px 0; 
+    height: 125px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background: black;
+    margin: 20px 0; 
+    width: 80%; 
+}
+
+nav {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(79, 37, 78);
+  }
+  
+  .navi {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  a {
+    padding-right: 40px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  

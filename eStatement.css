@@ -1,0 +1,127 @@
+/* Basic styles for the eStatement page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    color: white;
+    font-family: 'Eras Bold ITC', sans-serif;
+}
+
+header, footer {
+    background-color: rgb(15, 127, 140);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for the eStatements section */
+/* Styles for the eStatements section */
+.estatements {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+}
+
+.statement-list {
+    flex: 1;
+    position: relative; /* Add relative positioning */
+    padding-right: 20px;
+}
+
+.statement-list h2 {
+    margin-bottom: 10px;
+}
+
+.statement-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.statement-list li {
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    position: absolute; /* Position absolutely within statement-list */
+    top: 1; /* Position at the top */
+    right: 0; /* Position at the right */
+}
+
+.logo-container img {
+    max-width: 100%;
+}
+
+input[type="text"], select {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    height:40px;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  nav {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(79, 37, 78);
+  }
+  
+  .navi {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  a {
+    padding-right: 40px;
+    font-size: 20px;
+    color: white;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,105 @@
+input[type=text], input[type="date"], input[type="tel"], input[type="email"], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    position: center;
+    
+  }
+
+  body {
+    background: linear-gradient(to bottom left, rgb(241, 189, 255),rgb(223, 204, 228), rgb(26, 115, 133));
+  }
+
+  pre {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  button {
+    background-color: rgb(118, 39, 98);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none; /* Updated: Changed 'solid' to 'none' for text-decoration */
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Bauhaus 93', sans-serif;
+    border-radius: 50px;
+    padding: 8px; 
+    width: 150px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(24, 76, 82);
+}
+
+ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+a {
+  padding-right: 40px;
+  font-size: 25px;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

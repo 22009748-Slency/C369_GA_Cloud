@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(33, 80, 86);
+}
+
+#sgd {
+    font-size: 50px;
+    color: rgb(202, 202, 202);
+    font-family: 'century-gothic', sans-serif;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#availableBalance1 {
+    margin-top: 25px;
+    font-family: 'century-gothic', sans-serif;
+    color: rgb(55, 55, 55);
+    font-size: 40px;
+}
+
+.container {
+    background-color: white;
+    height: 1100px;
+    text-align: center;
+    
+}
+
+hr {
+    position: top;
+    border: none;
+    height: 3px; /* Adjust the height to your desired value */
+    background: black;
+    margin-top: 2px;
+    width: 70%;
+}
+
+#availableBalance {
+    font-size: 50px;
+    color: black;
+    font-family: 'century-gothic', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+
+    justify-content: center;
+    width:33.3%;
+    text-align: center;
+    
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+
+.column a {
+    display: block;
+}
+
+.column img {
+    width: 100px; /* Adjust the width to your desired size */
+    border: solid grey;
+    border-radius: 20%;
+
+}
+
+.column a + a {
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+a:link, a:visited {
+  
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'century-gothic', sans-serif;
+
+}
+
+header {
+    font-family: 'Eras Bold ITC', sans-serif;
+    font-size: 45px;
+}
+
+header, footer {
+    color: white;
+    background-color: rgbrgb(33, 80, 86);
+    text-align: center;
+    padding: 10px 0;
+}
+
